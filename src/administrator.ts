@@ -6,7 +6,6 @@ class Administrator implements IAdministrator {
     private _humidityObtained: number;
     private _sensor: ISensor;
     private _sprinkler: ISprinkler;
-
     private _humidityOutput: HTMLElement = document.getElementById("humidity");
     private _sprinklerOutput: HTMLElement = document.getElementById("sprinkler");
     private _alertMessagesOutput: HTMLElement = document.getElementById("alert-messages");
@@ -37,7 +36,6 @@ class Administrator implements IAdministrator {
 
         if (this._humidityObtained < 40) {
             this.turnOnSprinkler();
-            
             this._sprinklerOutput.innerHTML = "Turning on the sprinkler...";
             this._alertMessagesOutput.innerHTML = "ALERT! LOW HUMIDITY LEVEL DETECTED";
         } else if (this._humidityObtained < 50) {
