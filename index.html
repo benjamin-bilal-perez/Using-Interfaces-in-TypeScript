@@ -4,27 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
   <script type = module src='dist/greenhouse.js'></script>
 </head>
 
 <body>
   <header>
-    <h1>We automate a greenhouse!</h1>
+    <h1>Greenhouse information</h1>
   </header>
 
-  <p>Results:</p>
-  <p>Administrator information:</p>
-  <p id="administrator-information"></p>
-  <br>
-  <p>Humidity: </p>
-  <p id="humidity"></p>
-  <br>
-  <p>Sprinkler informattion: </p>
-  <p id="sprinkler"></p>
-  <br>
-  <p>Alert messages</p>
-  <p id="alert-messages"></p>
-  
+  <div class="information">
 
+      <div class="humudity-bar">
+        <p>Humidity: </p>
+        <p id="humidity-id"></p>
+        <div id="humidity-bar-id"></div>
+      </div>
+
+    <div class="sprinkler-informattion">
+        <p>Sprinkler informattion: </p>
+        <p id="sprinkler-id"></p>
+    </div>
+
+    <div class="alert-messages">
+      <p>Alert messages</p>
+      <p id="alert-messages-id"></p>
+    </div>
+  </div>
+
+  <div class="plant">
+    <div id="plant-id">
+      <img src="imgs/GreenPlant.png" alt="A plant" id="plant-img-id">
+    </div>
+  </div>
+  
 </body>
 </html>
