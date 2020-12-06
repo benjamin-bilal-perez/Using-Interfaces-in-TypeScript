@@ -5,9 +5,12 @@ declare class Administrator implements IAdministrator {
     private _humidityObtained;
     private _sensor;
     private _sprinkler;
+    private _fluctuation;
     private _humidityOutput;
     private _sprinklerOutput;
     private _alertMessagesOutput;
+    private _humidityBar;
+    private _plant;
     viewSensor(): void;
     turnOnSprinkler(): void;
     turnOffSprinkler(): void;
