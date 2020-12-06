@@ -1,8 +1,8 @@
 interface ISprinkler {
     switchedOn: boolean;
 
-    turnOff(): void;
-    turnOn(): void;
+    turnOff(): number;
+    turnOn(): number;
 }
 
 export { ISprinkler };
