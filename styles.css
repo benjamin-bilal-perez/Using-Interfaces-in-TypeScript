@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(171, 243, 142);
+}
+  
+header {
+    text-align: center;
+    padding: 20px;
+}
+  
+header > h1 {
+    color: rgb(0, 119, 179);
+}
+  
+* p {
+    font-size: 150%;
+}
+
+.information {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.humudity-bar, .sprinkler-informattion, .alert-messages {
+    min-width: 33%;
+    max-width: 33%;
+}
+
+#humidity-bar-id {
+    width: 10px;
+    height: 30px;
+    background-color: blue;
+    margin-top: 10px;
+    border: 5px solid black;
+}
+
+.plant {
+    position: absolute;
+    padding: 15px 32px;
+    display: inline-block;
+    top: 70%;
+    left: 43%;
+}
